@@ -3,8 +3,8 @@
 
 title: "Multilingual Surface Realization for NLG"
 summary: "Our system for a Narural Language Generation based shared task organized at ACL 2018 (Association for Computational Linguistics, Melbourne, Australia)."
-authors: []
-tags: [nlp, nlg, neural networks, ai, deep learning]
+authors: [Shreyansh Singh]
+tags: [nlp, nlg, neural networks, ai, deep learning, language model]
 categories: [Natural Language Processing]
 date: 2018-07-23T16:52:28+05:30
 
@@ -15,7 +15,7 @@ external_link: ""
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
+  caption: "srst 2018"
   focal_point: "Smart"
   preview_only: false
 
