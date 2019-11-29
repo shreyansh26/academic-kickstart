@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nelson Bighetti
+name: Shreyansh Singh
 
 # Username (this should match the folder name)
 authors:
@@ -10,32 +10,27 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Senior Undergraduate in Computer Science and Engineering 
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: IIT (BHU) Varanasi
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include information security, specially binary analysis and also application of Machine Learning in security.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Reverse Engineering
+- Binary Exploitation
+- Machine Learning
+- Natural Language Processing
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: B.Tech in Computer Science
+    institution: Indian Institute of Technology (BHU), Varanasi
+    year: 2016 (Ongoing)
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -44,21 +39,24 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:shreyansh.singh.cse16@iitbhu.ac.in'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/shreyansh_26
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.com/citations?user=x8LmoJIAAAAJ&hl=en
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/shreyansh26
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/shreyansh26/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+- icon: cv
+  icon_pack: ai
+  link: files/Shreyansh_Resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -70,6 +68,8 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am currently in my final year pursuing B.Tech in Computer Science and Engineering from IIT (BHU) Varanasi. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+My B.Tech advisor is [Prof. K.K. Shukla](https://iitbhu.ac.in/dept/cse/people/kkshuklacse). Currently, I am working on privacy-preserving Machine Learning and its application in the medical industry. Previously I have also worked with him on Adversarial Machine Learning and Malware classification problems. I also worked as a research intern at the [C3i Institute, Indian Institute of Technology Kanpur](https://security.cse.iitk.ac.in/) on Malware Detection for Linux, in winter 2018. In summer 2019, I was an intern at [Samsung Research Institute - Bangalore](https://research.samsung.com/sri-b), working on mobility in 5G networks. In summer 2018, I was a Data Science intern at [Innoplexus, Pune (India)](https://www.innoplexus.com/), working with the Computer Vision team. I have also worked with [Dr. Anil Kumar Singh](https://www.iitbhu.ac.in/dept/cse/people/aksinghcse), on sentiment analysis on product reviews and natural language generation.
+
+When not working on research, I enjoy playing CTFs ([wr47h](https://ctftime.org/team/34870)). I recently joined [Abs0lut3Pwn4g3](https://ctftime.org/team/72103), currently the 8th ranked CTF team in India. I also enjoy writing, reading and competitive coding.

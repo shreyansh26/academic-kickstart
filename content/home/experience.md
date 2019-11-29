@@ -33,7 +33,7 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "Professor"
+  title = "Data Science Intern"
   company = "University X"
   company_url = ""
   location = "California"
