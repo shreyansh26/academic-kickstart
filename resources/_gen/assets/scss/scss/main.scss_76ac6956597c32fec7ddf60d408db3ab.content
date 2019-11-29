@@ -7031,14 +7031,14 @@ a.text-dark:hover, a.text-dark:focus {
  *  Academic's Core
  **************************************************/
 html {
-  font-family: Roboto, sans-serif;
-  font-size: 16.17px;
+  font-family: B612 Mono, sans-serif;
+  font-size: 13.86px;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.65; }
 
 @media screen and (min-width: 58em) {
   html {
-    font-size: 21px; } }
+    font-size: 18px; } }
 
 body {
   font-family: inherit;
@@ -7082,14 +7082,14 @@ ul.task-list {
 
 /* Navigation bar text */
 .navbar-light {
-  font-family: Roboto, sans-serif;
+  font-family: B612 Mono, sans-serif;
   font-weight: 400;
   line-height: 1.25;
   text-rendering: optimizeLegibility; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Montserrat, sans-serif;
+  font-family: Space Mono, sans-serif;
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: .5rem;
@@ -7165,7 +7165,7 @@ figcaption.numbered {
 
 pre,
 code {
-  font-family: Roboto Mono, monospace;
+  font-family: B612 Mono, monospace;
   color: #c7254e;
   background-color: #f9f2f4; }
 
@@ -7532,7 +7532,7 @@ div.alert a {
   height: 70px;
   background: #3f51b5;
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
-  font-size: 16.17px;
+  font-size: 13.86px;
   position: fixed;
   top: 0;
   right: 0;
@@ -7558,7 +7558,7 @@ div.alert a {
         font-weight: bold !important;
         color: #8c9eff !important; }
   .navbar .dropdown-menu {
-    font-size: 16.17px; }
+    font-size: 13.86px; }
   .navbar .dropdown-item.active,
   .navbar .i18n-active {
     font-weight: bold;

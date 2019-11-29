@@ -35,7 +35,7 @@ These are the writeups to the problems I solved during the AngstromCTF.
 
 ---
 
-### **MISC**
+## MISC
 
 **1. Waldo1**
 
@@ -82,7 +82,7 @@ So , we run the command `binwalk -D 'png image:png' jiggs.gif.png`. On inspectin
 
 ---
 
-### Crypto
+## Crypto
 
 **1. Warmup**
 
@@ -133,7 +133,7 @@ So the flag is — **actf{rsa_is_reallllly_fun!!!!!!}**.
 
 ---
 
-### WEB
+## WEB
 
 **1. Source Me 1**
 
@@ -171,7 +171,7 @@ Here we see the SECRET_KEY variable assigned to the flag, **actf{wow_ur_a_jinja_
 
 ---
 
-### Reversing(RE)
+## Reversing(RE)
 
 **1. Rev1**
 
@@ -198,7 +198,7 @@ We get the flag as — **actf{4567_47_73}**.
 
 ---
 
-### Binary
+## Binary
 
 **1. Accumulator**
 

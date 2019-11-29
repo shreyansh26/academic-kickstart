@@ -35,13 +35,14 @@ A bit late for writeups, but still here are the solutions to the challenges I so
 **Update**: The scripts to solve and the flags are present in [this repo](https://github.com/wr47h/CTF-Writeups/tree/master/2019/RITSEC%20CTF%202019).
 
 
-I’’ll do the writeups category-wise -
+I'll do the writeups category-wise -
 
 ---
 
-### Crypto
+## Crypto
 
 **pre-legend — 100 pts**
+
 `9EEADi^⁸:E9F3]4@&gt;⁴=2J32==^D@&gt;6E9:?8\FD67F=\C:ED64`
 
 This is the provided cipher text. Since all of these are ASCII characters, we try a ROT of till say, 50.
@@ -73,7 +74,7 @@ This gives us the flag —**RITSEC{POEWASTHEGOAT}**
 **random — 290 pts**
 
 After connecting to _nc ctfchallenges.ritsec.club 8001_ we find that we are presented with a series of numbers and we have to guess the next. The challenge title tells us that we have something to do with the **random** function in the **C** language, because of the hint,
-> Are you starting to ‘C’ a pattern?
+> Are you starting to 'C' a pattern?
 
 We make a guess that whenever we request that host and port, the random function is initialized with a certain seed and we are given the first five random numbers generated from that seed. So, I wrote a simple C code to bruteforce all unix timestamps from 15th Nov 2019, 00:00 UTC to 17th Nov. 2019 00:00 UTC, and check for the seed. The code is shown below —
 
@@ -106,7 +107,7 @@ We provide the next number, and get the flag — **RITSEC{404_RANDOMNESS_NOT
 
 ---
 
-### **Misc**
+## Misc
 
 **Crack me If You Can — 391 pts**
 
@@ -139,20 +140,20 @@ The flag is — **RITSEC{0n1On_L4y3R}**
 
 **AlPhAbEtIcAl Challenge**
 
-I couldn’t solve this during the CTF, but saw other writeups and found that it was actually pretty interesting. The cipher text that is provided is —
+I couldn't solve this during the CTF, but saw other writeups and found that it was actually pretty interesting. The cipher text that is provided is —
 > 59:87:57:51:85:80{:40:50:56:08:82:58:81:08:18:85:57:87:48:85:88:40:50:56:59:15:56:11:18:85:59:51:}
 
-We see that the ‘{‘ and ‘}’ are in place. So, this must represent the flag. The other numbers are assigned some alphabet starting from ‘A’. After this we see that we have the following — ABCDEF{GHIJKLMJNECBOEPGHIAQIRNEAD}.
+We see that the '{' and '}' are in place. So, this must represent the flag. The other numbers are assigned some alphabet starting from 'A'. After this we see that we have the following — ABCDEF{GHIJKLMJNECBOEPGHIAQIRNEAD}.
 
 On this we use an online substitution solver like quipquip.com and also the fact that ABCDEF corresponds to RITSEC, we get the flag as — **RITSEC{YOUALPHABETIZEDYOURNUMBERS}**
 
 ---
 
-### Web
+## Web
 
 **misdirection — 100 pts**
 
-We are given a URL — [http://ctfchallenges.ritsec.club:5000/](http://ctfchallenges.ritsec.club:5000/) However, on clicking it we see that we are directed to another webpage [http://ctfchallenges.ritsec.club:5000/n](http://ctfchallenges.ritsec.club:5000/n) and the information that the webpage isn’t redirecting properly. So, I decided to see what is happening, for that I did a simple _wget_ to the url.
+We are given a URL — [http://ctfchallenges.ritsec.club:5000/](http://ctfchallenges.ritsec.club:5000/) However, on clicking it we see that we are directed to another webpage [http://ctfchallenges.ritsec.club:5000/n](http://ctfchallenges.ritsec.club:5000/n) and the information that the webpage isn't redirecting properly. So, I decided to see what is happening, for that I did a simple _wget_ to the url.
 
 
 {{< figure src="/post/2019-11-19_ritsec-ctf-2019/images/3.png" caption="Running wget" >}}
@@ -176,7 +177,7 @@ Heading to [http://bucketsoffun-ctf.s3.amazonaws.com/youfoundme-asd897kjm.txt](h
 
 ---
 
-### Forensics
+## Forensics
 
 **Take it to the Cleaners — 100 pts**
 
@@ -209,7 +210,7 @@ Opening the url gives the flag — **RITSEC{SP00KY_BR0WS3R_H1ST0RY}**
 
 ---
 
-### Pwn
+## Pwn
 
 **999 Bottles — 110 pts**
 
@@ -263,10 +264,10 @@ print(flag)
 f.close()
 ```
 
-Finally, we have the following string -
-> F”)|/f,:PsUUmKL*z(;N`QPtDZvX@j~=]q)AJ$w#g|Kehk)_$D_k;ESDz@ZK#=ZWfCo[GYG;FQ`W”mhoPlhr#W”N=RUxzjh”}&amp;PJWWE@Jh%vKEIey`h,Xvxnsce/oqb,&amp;*{#o&amp;gMe-:RbSJO*&gt;QIicbo&lt;[sm&gt;rmT@$@MgEwi:t{;U$WU[wRI!]+l[ngTqU&gt;W:W*)$Sb},PmyEdJ~puK^zk!y.]M].vnBl!.OECe=JDiM|n+RihaL”x_p@M^P!f&lt;Pa*j,A#”-,_n+z[?-bsQ.LBc{r&lt;xR$[vuA/vMq%/_f-Yqg#$V}y&amp;}[ReHU,`{^L/?rQlEW:Tv&amp;l|&amp;Ac#=FgrQR@a[Awwh-EEK@L:xf`M@E&amp;}VFOZo:]ObRyiAomKD|,=pErk)wr%ir!J+`.DkN_`k&gt;D}yrZ^[@J](http://twitter.com/J)&amp;,qIRo|dvY+m@o:{cBvSE:G&lt;;lGzV?NwpG*`VMnqSdXjN:r#=`=qq[qsn_kih&gt;|M|WzEfz^|J&gt;GTEc~k=KEbr@xOrP}iQnw#-uO-/]iCmbtBV+N*CmUiWl;STEf@}oB!e*!K#wmg](w.P]jm_o;Qec”AVm}JA#ua=hptzPVH?MSbopjRYUzDL_[[pA[)huW;=mhbIPAibwC[?o!”t.uKy[o~NiG;B=T.Rrn&amp;OrF:&amp;J&amp;Xf`lr^wN${HnW&lt;DtVjk.**RITSEC{AuT057v}**^W!xT;ImOU;ruPEQJKtRPlL#aGA.[PX,;,e~$t:*^dR?P_daEe,_{#r+iNrE-UVdeQh]GiIO+G;*.m=&amp;+g#x|P!oXA(iFm({ZgTIohA&lt;,.e(&amp;KWw|&gt;~,Wl&lt;XH]&lt;zT|H;gl.I_n”JAJ=n&amp;}KJV{wsIFgsGHv@)+kj&amp;&gt;AQ~%xxK}&lt;D?V+~oD?p=IZ$,Uy:L}$d[*VboIFrUuxp{{U!&amp;e}-MSFDal(dIp^dN]D_`DYi!$VpNB-ZCUYKVxXta$Ur*!kSN`k&gt;#fOzg]”ERlSIE~g)YlRi^oZg*Y,|ODGgbrXoqljJzChJ”c+ZRjy]}f{e
+Finally, we have the following string in the output generated -
+> lr^wN${HnW&lt;DtVjk.RITSEC{AuT057v}^W!xT
 
-Note the string in bold, that is the flag — **RITSEC{AuT057v}**
+Note the string in the flag format, that is the flag — **RITSEC{AuT057v}**
 
 A better way to solve it actually using the method described above. The following script can help do that -
 
