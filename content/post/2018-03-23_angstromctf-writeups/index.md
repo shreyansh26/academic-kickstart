@@ -36,7 +36,7 @@ These are the writeups to the problems I solved during the AngstromCTF.
 ---
 
 ## MISC
-
+&nbsp;  
 **1. Waldo1**
 
 We are given a zip file — flags.zip containing flags of countries. The file flag5.png, we see on opening has the flag.
@@ -45,6 +45,7 @@ We are given a zip file — flags.zip containing flags of countries. The fil
 {{< figure src="/post/2018-03-23_angstromctf-writeups/images/2.png" caption="Flag-Waldo1" >}}
 
 
+&nbsp;  
 **2. Waldo2**
 
 In this problem, we are given multiple flag images in a folder. Judging by the problem, it seems that one image is different. We see the md5 hash of the few files which are the same-**9f6e902c233020026caf0ebbb1cf0ff5**. So we write the following script-
@@ -54,11 +55,12 @@ In this problem, we are given multiple flag images in a folder. Judging by the p
 
 So, the filename we get is **waldo339.jpg**. Running `strings` on the file we get the flag as — **actf{r3d_4nd_wh1t3_str1p3s}**.
 
+&nbsp;  
 **3. That’s not my name**
 
 We are given a pdf file — gettysburg.pdf, but on trying to open it, it does not open, giving incorrect file format error. We run `binwalk` on the file to see that it infact is a `docx` file. We change the extension to `.docx` anf on opening we get the flag as — **actf{thanks_mr_lincoln_but_who_even_uses_word_anymore}**.
 
-
+&nbsp;  
 **4. File Transfer**
 
 
@@ -70,7 +72,7 @@ The highlighted packet shows a JPEG image capture. We export the JPEG as bytes t
 
 {{< figure src="/post/2018-03-23_angstromctf-writeups/images/4.jpeg" caption="Flag — File Transfer" >}}
 
-
+&nbsp;  
 **5. GIF**
 
 On running `binwalk` on the given image, we see that it is infact a collection of many images.
@@ -83,11 +85,12 @@ So , we run the command `binwalk -D 'png image:png' jiggs.gif.png`. On inspectin
 ---
 
 ## Crypto
-
+&nbsp;  
 **1. Warmup**
 
 From the term **_fine_** cipher, we get the hint that it could be an **Affine cipher**. We use an online Affine cipher [solver](https://www.dcode.fr/affine-cipher) to get the flag as — **actf{it_begins}**.
 
+&nbsp;  
 **2. Back to Base-ics**
 
 We are given the following cipher text -
@@ -112,6 +115,7 @@ Part 4: **tyf0ur_no_m0re}**
 
 So, the flag is — **actf{0ne_tw0_f0ur_eight_sixt33n_th1rtytw0_s1xtyf0ur_no_m0re}**
 
+&nbsp;  
 **3. XOR**
 
 This looks like a singlebyteXOR problem. We use the following script
@@ -121,6 +125,7 @@ This looks like a singlebyteXOR problem. We use the following script
 
 On seeing all the plain texts, we get the flag as — **actf{hope_you_used_a_script}**.
 
+&nbsp;  
 **4. Intro to RSA**
 
 This is a classical RSA problem, we use the following script to decrypt
@@ -134,19 +139,21 @@ So the flag is — **actf{rsa_is_reallllly_fun!!!!!!}**.
 ---
 
 ## WEB
-
+&nbsp;  
 **1. Source Me 1**
 
 Here, we are presented with a login page. On inspecting the source, we find the password —**f7s0jkl**, in the comments. **** So, we login with the username as `admin` and password as `f7s0jkl`.
 
 This gives us the flag-**actf{source_aint_secure}**.
 
+&nbsp;  
 **2. Get Me**
 
 Initially all we have is a button with the message that only authorized users are allowed to pass. On clicking the button, we get the message that we are not authorized. However in the url bar we see that the get parameter is `auth=false`. We change it to `auth=true`and hit enter.
 
 We then get the flag — **actf{why_did_you_get_me}**.
 
+&nbsp;  
 **3. Sequel**
 
 This is a classic case of SQL injection(SQLi). The hint here is the name of the problem which is pronunciation of SQL.
@@ -155,10 +162,12 @@ We enter both username and password as `'or''='`.
 
 This gives us the flag — **actf{sql_injection_more_like_prequel_injection}**.
 
+&nbsp;  
 **4. Source Me 2**
 
 We are give another login page. Here, too, the username is `admin`. On inspecting the source, we find the script which converts our entered password to md5 and compares it to the hash **bdc87b9c894da5168059e00ebffb9077**. We use an [online md5 decryptor to](http://www.md5online.org/) get the password as `password1234`. Entering this gives the flag — **actf{md5_hash_browns_and_pasta_sauce}**.
 
+&nbsp;  
 **5. Madlibs**
 
 Here, from the Flask code we see that there is a variable app.secret_key, which is basically a config variable. So we head to Tale of a Person section and enter `{{config}}` as the Author name and any random strings in the other options.
@@ -172,11 +181,12 @@ Here we see the SECRET_KEY variable assigned to the flag, **actf{wow_ur_a_jinja_
 ---
 
 ## Reversing(RE)
-
+&nbsp;  
 **1. Rev1**
 
 First, we run `strings` on the given ELF executable. We see the string, **s3cret_pa55word**. This could be the secret password the program is looking for. On running the executable and giving the above string as key, we get the flag. This is to be done on the shell server.
 
+&nbsp;  
 **2. Rev2**
 
 The ELF on executing asks for a number to be guessed. We use radare2 to disassemble the code.
@@ -199,7 +209,7 @@ We get the flag as — **actf{4567_47_73}**.
 ---
 
 ## Binary
-
+&nbsp;  
 **1. Accumulator**
 
 Here the ideas is to keep adding integers to an `int` variiable and without explicitly entering negative values, we have to make the result negative. This can be done by integer overflow.
@@ -210,12 +220,14 @@ Here the ideas is to keep adding integers to an `int` variiable and without expl
 
 Running these inputs on the shell server will give us the flag.
 
+&nbsp;  
 **2. Cookie Jar**
 
 This is a buffer overflow problem. Although we never explicitly gave a value to numCookie, we can overflow the buffer so that it gets a value. I fwe the following input — aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa99999998 to the program, we get the flag.
 
 The flag is — **actf{eat_cookies_get_buffer}**.
 
+&nbsp;  
 **3. Number Guess**
 
 We take the help of the hint given. The most common vulnerability of the printf function is the use(or not) of format strings.
@@ -228,6 +240,7 @@ In the code, just before the `printf(buf)` the two random integers are initializ
 
 So the flag is -**actf{format_stringz_are_pre77y_sc4ry}**.
 
+&nbsp;  
 **4. Rop to the Top**
 
 This is an example of Return Oriented Programming (ROP) vulnerability which is basically buffer overflow to access the non-executable stack. To exploit it we can use the following set of commands-

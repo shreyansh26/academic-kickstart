@@ -39,8 +39,8 @@ I'll do the writeups category-wise -
 
 ---
 
-## Crypto
-
+## Crypto  
+&nbsp;  
 **pre-legend — 100 pts**
 
 `9EEADi^⁸:E9F3]4@&gt;⁴=2J32==^D@&gt;6E9:?8\FD67F=\C:ED64`
@@ -58,6 +58,7 @@ Although there is nothing flag related in the repo, but the discord group of the
 
 Flag —**RITSEC{https://github.com/clayball/something-useful-ritsec}**
 
+&nbsp;  
 **Shiny — 100 pts**
 
 We are given the following text, and an image
@@ -71,6 +72,7 @@ This did not hit me directly, so I had to do a bit of Googling. I found that thi
 
 This gives us the flag —**RITSEC{POEWASTHEGOAT}**
 
+&nbsp;  
 **random — 290 pts**
 
 After connecting to _nc ctfchallenges.ritsec.club 8001_ we find that we are presented with a series of numbers and we have to guess the next. The challenge title tells us that we have something to do with the **random** function in the **C** language, because of the hint,
@@ -108,13 +110,14 @@ We provide the next number, and get the flag — **RITSEC{404_RANDOMNESS_NOT
 ---
 
 ## Misc
-
+&nbsp;  
 **Crack me If You Can — 391 pts**
 
 In this challenge, after connecting to _nc ctfchallenges.ritsec.club 8080_, we find that we are presented with queries of hashes, and we have to break them in order to get the flag. They were NTLM and sha256 hashes. So, we used a combination of [crackstation.net](http://crackstation.net) and John the Ripper to crack both of them.
 
 We found the flag — **RS{H@$HM31FY0UCAN}**
 
+&nbsp;  
 **Onion Layer Encoding — 100 pts**
 
 The challenge says that the text is encoded using either Base16 or Baser32 or Base64 in a sequence. So we write a simple python script to solve it.
@@ -138,7 +141,8 @@ print(flag)
 
 The flag is — **RITSEC{0n1On_L4y3R}**
 
-**AlPhAbEtIcAl Challenge**
+&nbsp;  
+**AlPhAbEtIcAl Challenge - 100pts**
 
 I couldn't solve this during the CTF, but saw other writeups and found that it was actually pretty interesting. The cipher text that is provided is —
 > 59:87:57:51:85:80{:40:50:56:08:82:58:81:08:18:85:57:87:48:85:88:40:50:56:59:15:56:11:18:85:59:51:}
@@ -150,7 +154,7 @@ On this we use an online substitution solver like quipquip.com and also the fact
 ---
 
 ## Web
-
+&nbsp;  
 **misdirection — 100 pts**
 
 We are given a URL — [http://ctfchallenges.ritsec.club:5000/](http://ctfchallenges.ritsec.club:5000/) However, on clicking it we see that we are directed to another webpage [http://ctfchallenges.ritsec.club:5000/n](http://ctfchallenges.ritsec.club:5000/n) and the information that the webpage isn't redirecting properly. So, I decided to see what is happening, for that I did a simple _wget_ to the url.
@@ -161,6 +165,7 @@ We are given a URL — [http://ctfchallenges.ritsec.club:5000/](http://ctfch
 
 We see that the page redirects to different pages and keeps doing that. We note that the last character is basically in the flag format when put together. We do that and get the flag — **RS{4!way5_Ke3p-m0v1ng}**
 
+&nbsp;  
 **Buckets of fun — 100 pts**
 
 We are given the following URL — [http://bucketsoffun-ctf.s3-website-us-east-1.amazonaws.com/](http://bucketsoffun-ctf.s3-website-us-east-1.amazonaws.com/)
@@ -179,6 +184,7 @@ Heading to [http://bucketsoffun-ctf.s3.amazonaws.com/youfoundme-asd897kjm.txt](h
 
 ## Forensics
 
+&nbsp;  
 **Take it to the Cleaners — 100 pts**
 
 We are given an image
@@ -199,6 +205,7 @@ Decoding it gives, **EVGFRP{SBERAFVPF_SNVYF_JBAG_URYC_LBH_URER}**
 
 Looks rotated by an offset. We use [http://theblob.org/rot.cgi](http://theblob.org/rot.cgi) to get rotations by different offsets. This is ROT13 and the flag is — **RITSEC{FORENSICS_FAILS_WONT_HELP_YOU_HERE}**
 
+&nbsp;  
 **Long Gone — 100 pts**
 
 We are provided a chromebin. Extract it as it is a tar archive.
@@ -212,6 +219,7 @@ Opening the url gives the flag — **RITSEC{SP00KY_BR0WS3R_H1ST0RY}**
 
 ## Pwn
 
+&nbsp;  
 **999 Bottles — 110 pts**
 
 We are given 999 ELF files, each having a password as a single character. Basically, 999 crackmes with a one character password. If we check the disassembly of main function of any one —

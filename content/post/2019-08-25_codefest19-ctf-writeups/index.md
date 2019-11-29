@@ -51,6 +51,7 @@ For this you had to use [archive.org,](http://archive.org) there was a snapshot 
 
 So, the final flag is — **CodefestCTF{G3t_r3ady_f0r_C0def3stCTF-8fb34fjr4bs43ur8}**
 
+&nbsp;  
 ### What language is this? (Misc — 100pts)
 
 This was basically a esoteric language question. The given text was —
@@ -63,6 +64,7 @@ The language was [Deadfish](https://esolangs.org/wiki/Deadfish). You could use a
 
 The final flag was — **CodefestCTF{Welc0me_t0_C0defest19}**
 
+&nbsp;  
 ### Gibberish file (Misc — 100pts)
 
 {{< figure src="/post/2019-08-25_codefest19-ctf-writeups/images/2.png" caption="The challenge" >}}
@@ -84,6 +86,7 @@ The flag was the ASCII analog of each unicode character.
 
 The flag was — **CodefestCTF{LiTErAL_REVERSinG}**
 
+&nbsp;  
 ### Image Corruption (Forensics — 100pts)
 
 In the challenge, you were given a link to a corrupted _.bmp_ [file](https://drive.google.com/file/d/1t5d_lKkdoG1aicBJYhM8wqh7Ispk0G4U/view). On viewing the file in a hex editor, and also checking the magic bytes —
@@ -102,10 +105,12 @@ Run the script, and you obtain the correct file.
 
 The flag is — **CodefestCTF{f1l35_h4v3_m461c_by735}**
 
+&nbsp;  
 ### Mail capture (Steganography— 100pts)
 
 You are presented with a “email friendly text”. This was encoded to unicode by a tool called **uuencode**. It can be decoded by using **uudecode**, a decoder for such formats. Running **uudecode** with the file gives an output file called “flag_encoded”. The contents are the flag — **CodefestCTF{7h15_15_4_c001_3nc0d1n9}**
 
+&nbsp;  
 ### Cats are innocent, right? (Steganography— 500pts)
 
 This challenge was based on LSB steganography. I had used a tool called [**stegify**](https://github.com/DimitarPetrov/stegify).
@@ -128,6 +133,7 @@ The flag is appended at the end of the zip file
 
 The flag is — **CodefestCTF{h1d1ng_b3h1nd_1nn0c3nt_k1tt3n5}**
 
+&nbsp;  
 ### Weird encoding (Misc— 200pts)
 
 
@@ -166,6 +172,7 @@ The obtained image is this -
 
 The flag is — **CodefestCTF{This_15_7h3_f14g}**.
 
+&nbsp;  
 ### Linux RE 1 (Reversing — 300pts)
 
 This challenge was a bit difficult to solve using a debugger due to some anti-debugging techniques that were implemented. Also, initially the ELF was packed using UPX, which was visible as a string when you would have run the **strings** command. So, first use
@@ -205,6 +212,7 @@ XOR both of them, and you get _an0th3r_s1mp1e_x0r_cr4ckm3_
 
 So, the flag is **CodefestCTF{an0th3r_s1mp1e_x0r_cr4ckm3}**
 
+&nbsp;  
 ### Linux RE 2 (Reversing — 500pts)
 
 Again we open the file in IDA or any disassembler and/or decompiler we see that the input should satisfy a set of conditions on the letters of the input.
@@ -221,6 +229,7 @@ The obtained password is — _shouldve_used_some_tool_
 
 The flag, hence, is **CodefestCTF{shouldve_used_some_tool}**
 
+&nbsp;  
 ### Windows RE (Reversing — 500pts)
 
 In this problem, the Windows exe file (actually a .NET file) that was provided, was packed with [ConfuserEx](https://yck1509.github.io/ConfuserEx/). We can use [NoFuserEx,](https://github.com/CodeShark-Dev/NoFuserEx) which is a free deobfuscator for this packer.
@@ -230,6 +239,7 @@ Then, open the executable in any .NET decompiler like dnSpy and check the **Form
 
 The flag — **CodefestCTF{51mp13_1npu7_v411d4710n_8u7_w17h_4_7w157}**
 
+&nbsp;  
 ### No Fatshaming (Web — 600pts)
 
 I’ll cheat a bit here xD. You can read my friend Yashit’s [awesome writeup](https://medium.com/@yashitmaheshwary/no-fatshaming-web-challenge-writeup-codefest19-ctf-1deea5a2ea49) on the challenge.
