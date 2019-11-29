@@ -19,33 +19,21 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
-  organization = "Coursera"
-  organization_url = "https://www.coursera.org"
-  title = "Neural Networks and Deep Learning"
-  url = ""
-  certificate_url = "https://www.coursera.org"
-  date_start = "2018-10-01"
+  organization = "BlackHat"
+  organization_url = "https://www.blackhat.com"
+  title = "Student scholarship"
+  url = "https://www.blackhat.com/asia-19/"
+  date_start = "2019-03-01"
   date_end = ""
-  description = ""
+  description = "Won a student scholarship to attend BlackHat Asia 2019, Singapore"
 
 [[item]]
-  organization = "edX"
-  organization_url = "https://www.edx.org"
-  title = "Blockchain Fundamentals"
-  url = "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
-  certificate_url = "https://www.edx.org"
-  date_start = "2018-03-01"
+  organization = "Workshop on Multilingual Surface Realsisation, ACL"
+  organization_url = "http://taln.upf.edu/pages/msr2018-ws/"
+  title = "Paper accepted!"
+  url = "https://www.aclweb.org/anthology/W18-3603/"
+  date_start = "2018-07-23"
   date_end = ""
-  description = "Formulated informed blockchain models, hypotheses, and use cases."
-  
-[[item]]
-  organization = "DataCamp"
-  organization_url = "https://www.datacamp.com"
-  title = "Object-Oriented Programming in R: S3 and R6 Course"
-  url = ""
-  certificate_url = "https://www.datacamp.com"
-  date_start = "2017-07-01"
-  date_end = "2017-12-21"
-  description = ""
+  description = "Paper accepted in the Proceedings of the 1st Workshop on Multilingual Surface Realisation (MSR), 56th Annual Meeting of the Association for Computational Linguistics (ACL), July 2018, Melbourne, Australia."
 
 +++
